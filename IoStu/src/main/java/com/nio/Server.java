@@ -58,7 +58,7 @@ public class Server {
 						String msg = new String(data).trim();
 						System.out.println("get msg:" + msg);
 						
-						ByteBuffer out = ByteBuffer.wrap("ok".getBytes());
+						ByteBuffer out = ByteBuffer.wrap("ok,i am server".getBytes());
 						channel.write(out);
 					}
 					
